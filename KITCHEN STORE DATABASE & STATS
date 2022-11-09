@@ -1,0 +1,22 @@
+CREATE TABLE kitchengoods (id INTEGER PRIMARY KEY, name TEXT, aisle INTEGER, price INTEGER, stock INTEGER, weight INTEGER);
+
+INSERT INTO kitchengoods (name, aisle, price, stock, weight) VALUES ("toaster", 3, 70, 25, 6);
+SELECT * FROM kitchengoods;
+
+INSERT INTO kitchengoods (name, aisle, price, stock, weight) VALUES ("knifeset", 5, 125, 18, 8);
+INSERT INTO kitchengoods (name, aisle, price, stock, weight) VALUES ("cuttingboard", 2, 35, 72,2);
+INSERT INTO kitchengoods (name, aisle, price, stock, weight) VALUES ("kitchenaid", 3, 350, 75, 8);
+INSERT INTO kitchengoods (name, aisle, price, stock, weight) VALUES ("blender", 3, 65, 25, 4);
+INSERT INTO kitchengoods (name, aisle, price, stock, weight) VALUES ("fruitbowl", 2, 27, 72, 2);
+INSERT INTO kitchengoods (name, aisle, price, stock, weight) VALUES ("winerack", 4, 27, 53, 4);
+INSERT INTO kitchengoods (name, aisle, price, stock, weight) VALUES ("coffeepot", 3, 55, 25, 4);
+INSERT INTO kitchengoods (name, aisle, price, stock, weight) VALUES ("soapdispenser", 2, 15, 53, 1);
+INSERT INTO kitchengoods (name, aisle, price, stock, weight) VALUES ("knifeblock", 2, 35, 72, 4);
+INSERT INTO kitchengoods (name, aisle, price, stock, weight) VALUES ("spatula", 2, 7, 75, 1);
+INSERT INTO kitchengoods (name, aisle, price, stock, weight) VALUES ("whisk", 2, 7, 75, 1);
+INSERT INTO kitchengoods (name, aisle, price, stock, weight) VALUES ("juicer", 3, 75, 25, 4);
+INSERT INTO kitchengoods (name, aisle, price, stock, weight) VALUES ("towelrack", 2, 19, 25, 2);
+INSERT INTO kitchengoods (name, aisle, price, stock, weight) VALUES ("lazysusan", 2, 35, 35, 4);
+SELECT * FROM kitchengoods ORDER BY price asc;
+SELECT * FROM kitchengoods WHERE aisle < 3;
+SELECT SUM(price) FROM kitchengoods;
